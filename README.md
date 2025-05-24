@@ -7,6 +7,34 @@ hacia la independencia y la vida en solitario**. Su objetivo principal es simpli
 ayudándote a llevar un control de tus alimentos, evitar el desperdicio y descubrir cómo cocinar deliciosas comidas sin
 complicaciones.
 
+
+## Tecnologías Utilizadas
+
+* **Java:** El lenguaje de programación principal.
+* **JavaFX:** El framework de interfaz de usuario para construir la aplicación de escritorio. Este framework proporciona un conjunto de herramientas y API para crear interfaces gráficas ricas y modernas, incluyendo:
+    * Controles de interfaz de usuario (botones, etiquetas, listas, etc.).
+    * Soporte para diseño declarativo mediante archivos FXML.
+    * Mecanismos para la gestión de la escena gráfica y ventanas.
+    * Capacidades de diseño y disposición de nodos en la interfaz.
+    * Manejo de eventos de usuario.
+    * Funcionalidades para la gestión de propiedades y la vinculación de datos.
+    * API para trabajar con colecciones dinámicas.
+    * Soporte para imágenes, pintura y texto.
+    * Animaciones y efectos visuales.
+* **Librerías JavaFX adicionales:**
+    * **BootstrapFX:** Para aplicar estilos similares a Bootstrap a la interfaz de usuario de JavaFX.
+    * **ControlsFX:** Proporciona controles de interfaz de usuario de alta calidad que complementan los controles básicos de JavaFX.
+    * **FormsFX:** Facilita la creación de formularios en JavaFX.
+    * **FXGL:** Una librería (motor) para crear juegos 2D en JavaFX (si decides añadir elementos de juego o animaciones más complejas).
+    * **Ikonli:** Permite utilizar packs de iconos en aplicaciones Java.
+    * **TilesFX:** Una librería para crear dashboards con JavaFX.
+    * **ValidatorFX:** Para la validación de formularios en JavaFX.
+* **MySQL (o la base de datos de tu elección):** Para el almacenamiento de la información de los usuarios y la despensa. Se utilizará el conector JDBC correspondiente (ej., `mysql-connector-j`).
+* **jBCrypt (u otra librería de encriptación):** Para la encriptación segura de las contraseñas de los usuarios.
+* **Librería JSON (Jackson, Gson u otra):** Para la manipulación de datos JSON al interactuar con la API de inteligencia artificial.
+* **API de Inteligencia Artificial (especificar cuál se utilizará):** Para la obtención de sugerencias de recetas.
+
+  
 ## Funcionalidades Principales
 
 * **Gestión de la Despensa:** Ingresa, visualiza y elimina alimentos, con seguimiento de su frescura.
