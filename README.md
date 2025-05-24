@@ -2,14 +2,20 @@
 
 ## Descripción
 
-**AliFood** es una aplicación de escritorio JavaFX diseñada especialmente para **jóvenes que están comenzando su camino hacia la independencia y la vida en solitario**. Su objetivo principal es simplificar la gestión de la despensa, ayudándote a llevar un control de tus alimentos, evitar el desperdicio y descubrir cómo cocinar deliciosas comidas sin complicaciones.
+**AliFood** es una aplicación de escritorio JavaFX diseñada especialmente para **jóvenes que están comenzando su camino
+hacia la independencia y la vida en solitario**. Su objetivo principal es simplificar la gestión de la despensa,
+ayudándote a llevar un control de tus alimentos, evitar el desperdicio y descubrir cómo cocinar deliciosas comidas sin
+complicaciones.
 
 ## Funcionalidades Principales
 
 * **Gestión de la Despensa:** Ingresa, visualiza y elimina alimentos, con seguimiento de su frescura.
-* **Alertas de Caducidad:** Recibe notificaciones sobre alimentos próximos a vencer y visualiza la eliminación automática de productos caducados.
-* **Lista de Compras Inteligente:** Gestiona tu lista de compras con sincronización automática a la despensa y designación de alimentos básicos.
-* **Sugerencias de Recetas con IA:** Descubre recetas creativas basadas en los ingredientes disponibles, priorizando aquellos a punto de caducar.
+* **Alertas de Caducidad:** Recibe notificaciones sobre alimentos próximos a vencer y visualiza la eliminación
+  automática de productos caducados.
+* **Lista de Compras Inteligente:** Gestiona tu lista de compras con sincronización automática a la despensa y
+  designación de alimentos básicos.
+* **Sugerencias de Recetas con IA:** Descubre recetas creativas basadas en los ingredientes disponibles, priorizando
+  aquellos a punto de caducar.
 * **Recetas Diarias:** Obtén ideas de recetas para desayuno, almuerzo y cena utilizando los alimentos de tu despensa.
 * **Autenticación Segura:** Inicio de sesión y registro de usuarios con validación y encriptación de contraseñas.
 
@@ -19,103 +25,103 @@ AliFood/
 
 ├── src/
 
-│   ├── main/
+│ ├── main/
 
-│   │   ├── java/
+│ │ ├── java/
 
-│   │   │   └── com/sebasth/
+│ │ │ └── com/sebasth/
 
-│   │   │       ├── models/
+│ │ │ ├── models/
 
-│   │   │       │   ├── Alimento.java
+│ │ │ │ ├── Alimento.java
 
-│   │   │       │   └── Usuario.java
+│ │ │ │ └── Usuario.java
 
-│   │   │       ├── views/
+│ │ │ ├── views/
 
-│   │   │       │   ├── LoginView.java
+│ │ │ │ ├── LoginView.java
 
-│   │   │       │   ├── RegistroView.java
+│ │ │ │ ├── RegistroView.java
 
-│   │   │       │   ├── DespensaView.java
+│ │ │ │ ├── DespensaView.java
 
-│   │   │       │   ├── ListaComprasView.java
+│ │ │ │ ├── ListaComprasView.java
 
-│   │   │       │   ├── RecetasView.java
+│ │ │ │ ├── RecetasView.java
 
-│   │   │       │   └── AlertaCaducidadDialog.java
+│ │ │ │ └── AlertaCaducidadDialog.java
 
-│   │   │       ├── controllers/
+│ │ │ ├── controllers/
 
-│   │   │       │   ├── LoginController.java
+│ │ │ │ ├── LoginController.java
 
-│   │   │       │   ├── DespensaController.java
+│ │ │ │ ├── DespensaController.java
 
-│   │   │       │   ├── ListaComprasController.java
+│ │ │ │ ├── ListaComprasController.java
 
-│   │   │       │   ├── RecetasController.java
+│ │ │ │ ├── RecetasController.java
 
-│   │   │       │   ├── UsuarioController.java
+│ │ │ │ ├── UsuarioController.java
 
-│   │   │       │   └── AlertaCaducidadController.java
+│ │ │ │ └── AlertaCaducidadController.java
 
-│   │   │       ├── database/
+│ │ │ ├── database/
 
-│   │   │       │   ├── DatabaseConnection.java
+│ │ │ │ ├── DatabaseConnection.java
 
-│   │   │       │   ├── AlimentoDAO.java
+│ │ │ │ ├── AlimentoDAO.java
 
-│   │   │       │   ├── UsuarioDAO.java
+│ │ │ │ ├── UsuarioDAO.java
 
-│   │   │       │   └── ListaComprasDAO.java
+│ │ │ │ └── ListaComprasDAO.java
 
-│   │   │       ├── api/
+│ │ │ ├── api/
 
-│   │   │       │   └── RecipeAPIConnector.java
+│ │ │ │ └── RecipeAPIConnector.java
 
-│   │   │       ├── utils/
+│ │ │ ├── utils/
 
-│   │   │       │   ├── PasswordUtils.java
+│ │ │ │ ├── PasswordUtils.java
 
-│   │   │       │   └── DateUtils.java
+│ │ │ │ └── DateUtils.java
 
-│   │   │       └── Main.java
+│ │ │ └── Main.java
 
-│   │   └── resources/
+│ │ └── resources/
 
-│   │       ├── com/sebasth/
+│ │ ├── com/sebasth/
 
-│   │       │   ├── assets/
+│ │ │ ├── assets/
 
-│   │       │   │   └── images/
+│ │ │ │ └── images/
 
-│   │       │   ├── styles/
+│ │ │ ├── styles/
 
-│   │       │   │   └── main.css
+│ │ │ │ └── main.css
 
-│   │       │   ├── views/
+│ │ │ ├── views/
 
-│   │       │   │   ├── LoginView.fxml
+│ │ │ │ ├── LoginView.fxml
 
-│   │       │   │   ├── RegistroView.fxml
+│ │ │ │ ├── RegistroView.fxml
 
-│   │       │   │   ├── DespensaView.fxml
+│ │ │ │ ├── DespensaView.fxml
 
-│   │       │   │   ├── ListaComprasView.fxml
+│ │ │ │ ├── ListaComprasView.fxml
 
-│   │       │   │   ├── RecetasView.fxml
+│ │ │ │ ├── RecetasView.fxml
 
-│   │       │   │   └── AlertaCaducidadDialog.fxml
+│ │ │ │ └── AlertaCaducidadDialog.fxml
 
-│   │       │   └── config.properties
+│ │ │ └── config.properties
 
-│   └── test/
+│ └── test/
 
-│       └── java/
+│ └── java/
 
-│           └── com/sebasth/
+│ └── com/sebasth/
 
-│               └── ...
+│ └── ...
 
 ├── lib/
 
@@ -123,7 +129,8 @@ AliFood/
 
 ├── README.md
 
-└── pom.xml 
+└── pom.xml
+
 ###
 
 * **`models/`**: Define las estructuras de datos (Alimento, Usuario) de forma clara y organizada.
@@ -138,29 +145,31 @@ AliFood/
 * **`resources/views/`**: Contiene los archivos que definen cómo se ve cada pantalla de la aplicación.
 * **`lib/`**: Almacena las herramientas externas que AliFood necesita para funcionar.
 * **`pom.xml` (o `build.gradle`)**: Ayuda a gestionar las herramientas que AliFood utiliza.
-  
+
 ## Cómo Empezar a Usar AliFood
 
-1.  Asegúrate de tener instalado el **Java Development Kit (JDK)** en tu computadora.
-2.  Si utilizas **Maven** o **Gradle**, verifica que estén instalados.
-3.  Descarga el proyecto AliFood (si lo obtuviste de un repositorio).
-4.  Abre el proyecto en **IntelliJ IDEA**.
-5.  Descarga las herramientas necesarias (dependencias) usando **Maven** (`mvn clean install`) o **Gradle** (`gradle build`).
-6.  Ejecuta el archivo `Main.java` que se encuentra en `src/main/java/com/sebasth/`.
+1. Asegúrate de tener instalado el **Java Development Kit (JDK)** en tu computadora.
+2. Si utilizas **Maven** o **Gradle**, verifica que estén instalados.
+3. Descarga el proyecto AliFood (si lo obtuviste de un repositorio).
+4. Abre el proyecto en **IntelliJ IDEA**.
+5. Descarga las herramientas necesarias (dependencias) usando **Maven** (`mvn clean install`) o **Gradle** (
+   `gradle build`).
+6. Ejecuta el archivo `Main.java` que se encuentra en `src/main/java/com/sebasth/`.
 
 **¡Bienvenido a la Cocina Independiente con AliFood!**
 
-AliFood está diseñado para hacer tu vida más fácil mientras te adaptas a vivir solo. ¡Esperamos que disfrutes de la experiencia y descubras lo sencillo que puede ser gestionar tu despensa y cocinar deliciosas comidas!
+AliFood está diseñado para hacer tu vida más fácil mientras te adaptas a vivir solo. ¡Esperamos que disfrutes de la
+experiencia y descubras lo sencillo que puede ser gestionar tu despensa y cocinar deliciosas comidas!
 
 ## Contribución
 
 Si tienes ideas para mejorar AliFood o encuentras algún problema, ¡no dudes en contribuir!
 
-1.  Haz una copia del proyecto (**fork**).
-2.  Crea una rama para tus ideas (`git checkout -b feature/tu-nueva-idea`).
-3.  Realiza los cambios que consideres importantes (`git commit -m 'Añade tu increíble idea'`).
-4.  Sube tus cambios a tu copia del proyecto (`git push origin feature/tu-nueva-idea`).
-5.  Envía una solicitud para que tus cambios se incluyan en el proyecto principal (**Pull Request**).
+1. Haz una copia del proyecto (**fork**).
+2. Crea una rama para tus ideas (`git checkout -b feature/tu-nueva-idea`).
+3. Realiza los cambios que consideres importantes (`git commit -m 'Añade tu increíble idea'`).
+4. Sube tus cambios a tu copia del proyecto (`git push origin feature/tu-nueva-idea`).
+5. Envía una solicitud para que tus cambios se incluyan en el proyecto principal (**Pull Request**).
 
 ## Licencia
 
