@@ -13,4 +13,6 @@ module com.sebasth.alifood {
 
     opens com.sebasth.alifood to javafx.fxml;
     exports com.sebasth.alifood;
+    exports com.sebasth.alifood.controllers;
+    opens com.sebasth.alifood.controllers to javafx.fxml;
 }
