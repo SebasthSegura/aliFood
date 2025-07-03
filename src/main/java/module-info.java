@@ -10,6 +10,7 @@ module com.sebasth.alifood {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires java.sql;
 
     opens com.sebasth.alifood to javafx.fxml;
     exports com.sebasth.alifood;
