@@ -12,6 +12,8 @@ module com.sebasth.alifood {
     requires com.almasb.fxgl.all;
     requires java.sql;
     requires jbcrypt;
+    requires com.fasterxml.jackson.databind;
+    requires java.net.http;
 
     opens com.sebasth.alifood to javafx.fxml;
     exports com.sebasth.alifood;
