@@ -11,6 +11,7 @@ module com.sebasth.alifood {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
     requires java.sql;
+    requires jbcrypt;
 
     opens com.sebasth.alifood to javafx.fxml;
     exports com.sebasth.alifood;
