@@ -67,12 +67,13 @@ public class DatabaseConnection {
             System.out.println("Food table created/verify.");
 
             // Create table shoppingList (gestion the food that the user wants to buy)
-            String createShoppingListTableSQL = "CREATE TABLE IF NOT EXISTS shoppingList (" +
+            String createShoppingListTableSQL = "CREATE TABLE IF NOT EXISTS shopping_List (" +
                     "id INT AUTO_INCREMENT PRIMARY KEY," +
                     "foodId INT NOT NULL," +
                     "item_name TEXT NOT NULL," +
                     "quantity INT NOT NULL," +
                     "FOREIGN KEY (foodId) REFERENCES food(id)" +
+                    "status TEXT NOT NULL" +
                     ")";
             stmt.execute(createShoppingListTableSQL);
             System.out.println("Shopping List table created/verify.");
