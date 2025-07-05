@@ -1,6 +1,7 @@
 package com.sebasth.alifood.controllers;
 
 import com.sebasth.alifood.database.UserDAO;
+import com.sebasth.alifood.views.PantryView;
 import com.sebasth.alifood.models.User;
 import com.sebasth.alifood.utils.PasswordUtils;
 import com.sebasth.alifood.views.RegisterView;
