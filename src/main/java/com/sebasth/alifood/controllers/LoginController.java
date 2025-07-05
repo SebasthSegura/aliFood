@@ -60,6 +60,19 @@ public class LoginController {
     }
 
     // Method to load the pantry application view
+    public void showPantryView(Stage stage) throws IOException{
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/sebasth/alifood/views/pantry-view.fxml"));
+        Parent root = loader.load();
+        PantryView pantryView = loader.getController();
+        pantryView.setPantryController(new PantryController());
+
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setTitle("AliFood - Despensa");
+        stage.show();
+    }
+
+    // Method to load the register view
     public void loadRegisterView(Stage stage) throws IOException{
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/sebasth/alifood/views/RegisterView.fxml"));
         Parent root = loader.load();

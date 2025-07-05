@@ -36,6 +36,19 @@ public class LoginView {
 
         if (loginController.authenticateUser(username, password)){
             messageLabel.setText("Inicio de sesión exitoso.");
+            try {
+                loginController.showPantryView((Stage) usernameField.getScene().getWindow());
+            } catch (IOException e) {
+                messageLabel.setText("Error al cargar la vista de despensa: " + e.getMessage());
+                e.printStackTrace();
+            }
+        } else {
+            messageLabel.setText("Nombre de usuario o contraseña incorrectos.");
         }
+    }
+
+    @FXML
+    private void handleRegisterButtonAction(ActionEvent event){
+        // use to future
     }
 }
