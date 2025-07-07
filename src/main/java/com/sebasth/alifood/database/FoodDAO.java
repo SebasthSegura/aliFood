@@ -32,6 +32,12 @@ public class FoodDAO {
         }
     }
 
+    // Method to add food of the shopping list
+    public void addFoodFromShopList(String name, boolean inFridge, boolean isBasic) throws SQLException {
+        Food food = new Food(name, LocalDate.now(), null, inFridge, isBasic);
+        addfood(food);
+    }
+
     // Method to get food by ID
     public Food getFoodId(int id) throws SQLException {
         String sql = "SELECT * FROM food WHERE id = ?";

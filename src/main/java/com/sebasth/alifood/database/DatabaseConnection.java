@@ -77,6 +77,18 @@ public class DatabaseConnection {
                     ")";
             stmt.execute(createShoppingListTableSQL);
             System.out.println("Shopping List table created/verify.");
+
+            // Create table for Pantry (gestion the food that the user has in the pantry)
+            String createPantryTableSQL = "CREATE TABLE IF NOT EXISTS pantry (" +
+                    "Id_pantry INT AUTO_INCREMENT PRIMARY KEY," +
+                    "foodId INT NOT NULL," +
+                    "item_name TEXT NOT NULL," +
+                    "quantity INT NOT NULL," +
+                    "FOREIGN KEY (foodId) REFERENCES food(id)" +
+                    ")";
+            stmt.execute(createPantryTableSQL);
+            System.out.println("Pantry table created/verify.");
+
         } catch (SQLException e) {
             System.out.println("Error initializing the database: " + e.getMessage());
             e.printStackTrace();
