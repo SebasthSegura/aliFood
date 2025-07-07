@@ -9,8 +9,8 @@ public class DatabaseConnection {
     // database connection instance
     private static Connection connection = null;
     private static final String URL = "jdbc:mysql://localhost:3306/alifood";
-    private static final String USER = "root";
-    private static final String PASSWORD = "password";
+    private static final String USER = "sebastremote";
+    private static final String PASSWORD = "1INremoteBD2580*";
 
     // public static final String DRIVER = "com.mysql.cj.jdbc.Driver";
     public static Connection getConnection() throws SQLException{
