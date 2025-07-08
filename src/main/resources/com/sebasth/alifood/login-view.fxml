@@ -35,7 +35,6 @@
             <Button mnemonicParsing="false" onAction="#handleLoginButtonAction" prefWidth="200.0" text="Iniciar Sesion"/>
             <Button mnemonicParsing="false" onAction="#handleRegisterButtonAction" prefWidth="200.0" text="Registrarse"/>
         </children>
-
     </VBox>
 
 </AnchorPane>
