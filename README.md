@@ -57,51 +57,53 @@ AliFood/
 
 │ │ ├── java/
 
-│ │ │ └── com/sebasth/
+│ │ │ └── com/sebasth/alifood/
 
 │ │ │ ├── models/
 
-│ │ │ │ ├── Alimento.java
+│ │ │ │ ├── Food.java
 
-│ │ │ │ └── Usuario.java
+│ │ │ │ ├── Recipe.java
+
+│ │ │ │ └── User.java
 
 │ │ │ ├── views/
 
 │ │ │ │ ├── LoginView.java
 
-│ │ │ │ ├── RegistroView.java
+│ │ │ │ ├── RegisterView.java
 
-│ │ │ │ ├── DespensaView.java
+│ │ │ │ ├── PantryView.java
 
-│ │ │ │ ├── ListaComprasView.java
+│ │ │ │ ├── ShopListView.java
 
-│ │ │ │ ├── RecetasView.java
+│ │ │ │ ├── RecipesView.java
 
-│ │ │ │ └── AlertaCaducidadDialog.java
+│ │ │ │ └── AlertExpiredView.java
 
 │ │ │ ├── controllers/
 
 │ │ │ │ ├── LoginController.java
 
-│ │ │ │ ├── DespensaController.java
+│ │ │ │ ├── PantryController.java
 
-│ │ │ │ ├── ListaComprasController.java
+│ │ │ │ ├── ShopListController.java
 
-│ │ │ │ ├── RecetasController.java
+│ │ │ │ ├── RecipesController.java
 
-│ │ │ │ ├── UsuarioController.java
+│ │ │ │ ├── UserController.java
 
-│ │ │ │ └── AlertaCaducidadController.java
+│ │ │ │ └── AlertExpiredController.java
 
 │ │ │ ├── database/
 
 │ │ │ │ ├── DatabaseConnection.java
 
-│ │ │ │ ├── AlimentoDAO.java
+│ │ │ │ ├── FoodDAO.java
 
-│ │ │ │ ├── UsuarioDAO.java
+│ │ │ │ ├── UserDAO.java
 
-│ │ │ │ └── ListaComprasDAO.java
+│ │ │ │ └── ShopListDAO.java
 
 │ │ │ ├── api/
 
@@ -129,17 +131,17 @@ AliFood/
 
 │ │ │ ├── views/
 
-│ │ │ │ ├── LoginView.fxml
+│ │ │ │ ├── login-view.fxml
 
-│ │ │ │ ├── RegistroView.fxml
+│ │ │ │ ├── register-view.fxml
 
-│ │ │ │ ├── DespensaView.fxml
+│ │ │ │ ├── pantry-view.fxml
 
-│ │ │ │ ├── ListaComprasView.fxml
+│ │ │ │ ├── shop-list-view.fxml
 
-│ │ │ │ ├── RecetasView.fxml
+│ │ │ │ ├── recipes-view.fxml
 
-│ │ │ │ └── AlertaCaducidadDialog.fxml
+│ │ │ │ └── alertexpiredDialog.fxml
 
 │ │ │ └── config.properties
 
@@ -167,7 +169,7 @@ AliFood/
 * **`database/`**: Gestiona la información de tus alimentos y usuarios de manera segura.
 * **`api/`**: Permite que AliFood te ofrezca las mejores sugerencias de recetas basadas en lo que tienes.
 * **`utils/`**: Incluye herramientas prácticas para el funcionamiento de la aplicación.
-* **`Main.java`**: El punto de inicio para que comiences a usar AliFood.
+* **`AliFoodAplication.java`**: El punto de inicio para que comiences a usar AliFood.
 * **`resources/assets/`**: Guarda las imágenes y otros elementos visuales de la aplicación.
 * **`resources/styles/`**: Define la apariencia moderna y fácil de leer de AliFood.
 * **`resources/views/`**: Contiene los archivos que definen cómo se ve cada pantalla de la aplicación.
@@ -182,7 +184,7 @@ AliFood/
 4. Abre el proyecto en **IntelliJ IDEA**.
 5. Descarga las herramientas necesarias (dependencias) usando **Maven** (`mvn clean install`) o **Gradle** (
    `gradle build`).
-6. Ejecuta el archivo `Main.java` que se encuentra en `src/main/java/com/sebasth/`.
+6. Ejecuta el archivo `AliFoodAplication.java` que se encuentra en `src/main/java/com/sebasth/`.
 
 **¡Bienvenido a la Cocina Independiente con AliFood!**
 
@@ -201,35 +203,10 @@ Si tienes ideas para mejorar AliFood o encuentras algún problema, ¡no dudes en
 
 ## Licencia
 
-[Aquí iría la información de la licencia, si aplica]
+[Aquí iría la información de la licencia del proyecto, en caso de que se utilice una licencia específica,]
 
-## Dependencias
+## Vistas Previas
 
-(Las dependencias específicas se listarán aquí, por ejemplo, con Maven:)
-
-```xml
-<dependency>
-    <groupId>mysql</groupId>
-    <artifactId>mysql-connector-j</artifactId>
-    <version>tu_version</version>
-</dependency>
-<dependency>
-    <groupId>org.openjfx</groupId>
-    <artifactId>javafx-controls</artifactId>
-    <version>tu_version_javafx</version>
-</dependency>
-<dependency>
-    <groupId>org.openjfx</groupId>
-    <artifactId>javafx-fxml</artifactId>
-    <version>tu_version_javafx</version>
-</dependency>
-<dependency>
-    <groupId>org.mindrot</groupId>
-    <artifactId>jbcrypt</artifactId>
-    <version>tu_version</version>
-</dependency>
-<dependency>
-    <groupId>com.fasterxml.jackson.core</groupId>
-    <artifactId>jackson-databind</artifactId>
-    <version>tu_version_jackson</version>
-</dependency>
+* **Login**
+##
+![Captura de pantalla de la vista de Login](src/main/resources/com/sebasth/alifood/assets/login-view.fxml.png)
