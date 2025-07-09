@@ -15,7 +15,7 @@ module com.sebasth.alifood {
     requires com.fasterxml.jackson.databind;
     requires java.net.http;
 
-    opens com.sebasth.alifood to javafx.fxml;
+    opens com.sebasth.alifood.views to javafx.fxml;
     exports com.sebasth.alifood;
     exports com.sebasth.alifood.controllers;
     opens com.sebasth.alifood.controllers to javafx.fxml;
