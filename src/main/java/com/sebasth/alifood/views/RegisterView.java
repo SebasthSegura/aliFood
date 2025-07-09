@@ -1,5 +1,6 @@
 package com.sebasth.alifood.views;
 
+import com.sebasth.alifood.AliFoodAplication;
 import com.sebasth.alifood.controllers.LoginController;
 import com.sebasth.alifood.controllers.RegisterController;
 import javafx.fxml.FXML;
@@ -97,7 +98,7 @@ public class RegisterView {
     private void handleReturnToLogin() {
         if (stage!= null){
             stage.close();
-            //Main.showLoginView();
+            AliFoodAplication.showLoginView();
         }
     }
 

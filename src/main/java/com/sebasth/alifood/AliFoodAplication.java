@@ -24,10 +24,10 @@ public class AliFoodAplication extends Application {
     }
 
     // Method to show the login view
-    public void showLoginView(){
+    public static void showLoginView(){
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/com/sebasth/alifood/login-view.fxml"));
+            loader.setLocation(AliFoodAplication.class.getResource("/com/sebasth/alifood/login-view.fxml"));
             AnchorPane loginL = loader.load();
 
             Stage loginStage = new Stage();
