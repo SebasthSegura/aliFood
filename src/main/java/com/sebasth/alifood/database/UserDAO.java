@@ -65,4 +65,19 @@ public class UserDAO {
             pstmt.executeUpdate();
         }
     }
+
+    // Method to check if a user exists by username
+    public boolean userExists(String username) throws SQLException {
+        String sql = "SELECT COUNT(*) FROM User WHERE username = ?";
+        try (Connection conn = DatabaseConnection.getConnection();
+        PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, username);
+            try (ResultSet rs = pstmt.executeQuery()) {
+                if (rs.next()) {
+                    return rs.getInt(1) > 0; // Return true if count is greater than 0
+                }
+            }
+        }
+        return false; // User does not exist
+    }
 }
