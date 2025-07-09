@@ -1,5 +1,6 @@
 package com.sebasth.alifood.views;
 
+import com.sebasth.alifood.controllers.LoginController;
 import com.sebasth.alifood.controllers.RegisterController;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -25,6 +26,7 @@ public class RegisterView {
     private Label messageLabel;
 
     private RegisterController registerController;
+    private LoginController loginController;
     private Stage stage;
 
     // Create a constructor to FXML
@@ -35,6 +37,10 @@ public class RegisterView {
 
     public void setRegisterController(RegisterController registerController) {
         this.registerController = registerController;
+    }
+
+    public void setLoginController(LoginController loginController) {
+        this.loginController = loginController;
     }
 
     public void setStage(Stage stage) {

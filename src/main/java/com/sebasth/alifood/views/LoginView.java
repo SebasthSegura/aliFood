@@ -25,7 +25,7 @@ public class LoginView {
 
     // Initialize the controller
     @FXML
-    private void setLoginController(LoginController loginController){
+    public void setLoginController(LoginController loginController){
         this.loginController = loginController;
     }
 
@@ -49,6 +49,11 @@ public class LoginView {
 
     @FXML
     private void handleRegisterButtonAction(ActionEvent event){
-        // use to future
+        try {
+            loginController.loadRegisterView((Stage) usernameField.getScene().getWindow());
+        } catch (IOException e) {
+            messageLabel.setText("Error al cargar la vista de registro: " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 }

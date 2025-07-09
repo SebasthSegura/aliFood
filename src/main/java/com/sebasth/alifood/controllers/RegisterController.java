@@ -11,8 +11,8 @@ public class RegisterController {
     private User newUser;
 
     // Constructor to inject UserDAO dependency
-    public RegisterController(UserDAO userDAO) {
-        this.userDAO = userDAO;
+    public RegisterController() {
+        this.userDAO = new UserDAO();
     }
 
     // Method to register a new user
@@ -20,6 +20,7 @@ public class RegisterController {
         String hashedPassword = PasswordUtils.hashPassword(password);
         // Check if the user already exists
         if (userDAO.userExists(username)) {
+            System.out.println("Usuario ya existe: " + username);
             return false; // User already exists
         }
         newUser = new User(username, hashedPassword);

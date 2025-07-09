@@ -74,10 +74,10 @@ public class LoginController {
 
     // Method to load the register view
     public void loadRegisterView(Stage stage) throws IOException{
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/sebasth/alifood/views/RegisterView.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/sebasth/alifood/register-view.fxml"));
         Parent root = loader.load();
         RegisterView registerView = loader.getController();
-        /*registerView.setLoginController(this);*/
+        registerView.setLoginController(this);
 
         Scene scene = new Scene(root);
         stage.setScene(scene);
