@@ -210,3 +210,7 @@ Si tienes ideas para mejorar AliFood o encuentras algún problema, ¡no dudes en
 * **Login**
 ##
 ![Captura de pantalla de la vista de Login](src/main/resources/com/sebasth/alifood/assets/login-view.fxml.png)
+
+* **Registro**
+##
+![Captura de pantalla de la vista de Registro](src/main/resources/com/sebasth/alifood/assets/register-view.fxml.png)
