@@ -63,12 +63,12 @@ public class RegisterView {
 
         // Validate input
         if (username.isEmpty() || password.isEmpty() || confirmPass.isEmpty()) {
-            messageLabel.setText("Please fill in all fields.");
+            messageLabel.setText("Por favor complete todos los campos.");
             return;
         }
 
         if (!password.equals(confirmPass)) {
-            messageLabel.setText("Passwords do not match.");
+            messageLabel.setText("Las contraseñas no coinciden.");
             return;
         }
 
