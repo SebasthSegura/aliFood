@@ -24,7 +24,7 @@ public class AliFoodAplication extends Application {
     }
 
     // Method to show the login view
-    public static void showLoginView(){
+    public void showLoginView(){
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(AliFoodAplication.class.getResource("/com/sebasth/alifood/login-view.fxml"));
@@ -53,7 +53,7 @@ public class AliFoodAplication extends Application {
             registerStage.setScene(new Scene(registerV));
             RegisterView registerView = loader.getController();
 
-            registerView.setRegisterController(new RegisterController());
+            registerView.setRegisterController(new RegisterController(), registerStage, this::showLoginView);
             registerStage.show();
 
         } catch (IOException e) {

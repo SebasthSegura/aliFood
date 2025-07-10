@@ -1,6 +1,7 @@
 package com.sebasth.alifood.views;
 
 import com.sebasth.alifood.controllers.LoginController;
+import com.sebasth.alifood.controllers.RegisterController;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
@@ -22,11 +23,17 @@ public class LoginView {
     private Label messageLabel;
 
     private LoginController loginController;
+    private RegisterController registerController;
 
     // Initialize the controller
     @FXML
     public void setLoginController(LoginController loginController){
         this.loginController = loginController;
+    }
+
+    @FXML
+    public void setRegisterController(RegisterController registerController){
+        this.registerController = registerController;
     }
 
     @FXML

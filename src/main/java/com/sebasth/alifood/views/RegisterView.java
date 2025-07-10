@@ -10,6 +10,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.sql.SQLException;
 
 public class RegisterView {
@@ -29,6 +30,7 @@ public class RegisterView {
     private RegisterController registerController;
     private LoginController loginController;
     private Stage stage;
+    private Runnable onLoginReturn;
 
     // Create a constructor to FXML
     public RegisterView(){
@@ -36,8 +38,10 @@ public class RegisterView {
 
     // Method to inject the controller and stage
 
-    public void setRegisterController(RegisterController registerController) {
+    public void setRegisterController(RegisterController registerController, Stage stage, Runnable onLoginReturn) {
         this.registerController = registerController;
+        this.stage = stage;
+        this.onLoginReturn = onLoginReturn;
     }
 
     public void setLoginController(LoginController loginController) {
@@ -96,9 +100,11 @@ public class RegisterView {
     // Method to handle the return to login view
     @FXML
     private void handleReturnToLogin() {
-        if (stage!= null){
+        if (stage != null) {
             stage.close();
-            AliFoodAplication.showLoginView();
+            if (onLoginReturn != null) {
+                onLoginReturn.run();
+            }
         }
     }
 
