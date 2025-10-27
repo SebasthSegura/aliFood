@@ -37,4 +37,5 @@ build/
 ### Mac OS ###
 .DS_Store
 
-database.env
+# Ignorar el archivo de variables de entorno (credenciales)
+.env
